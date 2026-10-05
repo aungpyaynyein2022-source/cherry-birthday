@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Cherry 🌸</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: #fff1f6;
+    color: #70445a;
+}
+
+
+/* =====================================================
+   PAGE 1
+===================================================== */
+
+.page-one {
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 15% 15%, #ffe0ed, transparent 25%),
+        radial-gradient(circle at 85% 20%, #ffd5e6, transparent 27%),
+        linear-gradient(135deg, #fff8fb, #ffe7f0);
+}
+
+.page-one h1 {
+
+    font-family: 'DM Serif Display', serif;
+
+    font-size: clamp(40px, 8vw, 76px);
+
+    font-weight: 400;
+
+    color: #d45b8d;
+
+    text-shadow:
+        0 8px 30px rgba(190,70,120,.15);
+}
+
+.small-text {
+
+    margin-top: 12px;
+    margin-bottom: 55px;
+
+    font-size: 13px;
+
+    color: #a66a83;
+}
+
+
+/* =====================================================
+   HEART
+===================================================== */
+
+.heart-button {
+
+    width: 145px;
+    height: 145px;
+
+    border: none;
+    background: transparent;
+
+    position: relative;
+
+    cursor: pointer;
+
+    animation: heartFloat 3s ease-in-out infinite;
+}
+
+.heart-shape {
+
+    width: 105px;
+    height: 105px;
+
+    position: absolute;
+
+    left: 20px;
+    top: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffb5d1,
+            #e96c9d
+        );
+
+    transform: rotate(-45deg);
+
+    border-radius: 18px 0 18px 0;
+
+    box-shadow:
+        0 15px 35px rgba(213,82,137,.35),
+        inset 5px 5px 12px rgba(255,255,255,.5);
+}
+
+.heart-shape::before,
+.heart-shape::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 105px;
+    height: 105px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffb5d1,
+            #e96c9d
+        );
+}
+
+.heart-shape::before {
+    top: -52px;
+    left: 0;
+}
+
+.heart-shape::after {
+    top: 0;
+    left: 52px;
+}
+
+.heart-content {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 5;
+
+    font-size: 28px;
+}
+
+.heart-label {
+
+    position: absolute;
+
+    width: 240px;
+
+    bottom: -45px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 13px;
+
+    color: #a65c7d;
+}
+
+@keyframes heartFloat {
+
+    0%,100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-9px) scale(1.04);
+    }
+}
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+.floating-heart {
+
+    position: absolute;
+
+    bottom: -50px;
+
+    color: #ed8db2;
+
+    opacity: .55;
+
+    animation: floatUp linear infinite;
+
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: .7;
+    }
+
+    100% {
+        transform:
+            translateY(-115vh)
+            rotate(30deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   PAGE 2
+===================================================== */
+
+.page-two {
+
+    display: none;
+
+    min-height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 10% 10%, #ffe0ed, transparent 25%),
+        radial-gradient(circle at 90% 20%, #ffd7e8, transparent 28%),
+        linear-gradient(
+            180deg,
+            #fff5f9,
+            #ffe8f1,
+            #ffdce9
+        );
+}
+
+.page-title {
+
+    text-align: center;
+
+    padding-top: 65px;
+
+    position: relative;
+
+    z-index: 20;
+}
+
+.page-title h2 {
+
+    font-family: 'DM Serif Display', serif;
+
+    font-size: clamp(35px,7vw,58px);
+
+    font-weight: 400;
+
+    color: #cd5688;
+}
+
+.page-title p {
+
+    margin-top: 10px;
+
+    font-size: 13px;
+
+    color: #a76a83;
+}
+
+
+/* =====================================================
+   TREE AREA
+===================================================== */
+
+.tree-area {
+
+    width: 100%;
+
+    min-height: 900px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-end;
+
+    position: relative;
+}
+
+
+/* =====================================================
+   TREE
+===================================================== */
+
+.tree {
+
+    width: 760px;
+
+    height: 760px;
+
+    max-width: 100vw;
+
+    position: relative;
+
+    transform-origin: bottom center;
+}
+
+
+/* =====================================================
+   GROUND
+===================================================== */
+
+.ground {
+
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 550px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(160,70,105,.15),
+            transparent 70%
+        );
+}
+
+
+/* =====================================================
+   TRUNK
+===================================================== */
+
+.trunk {
+
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 80px;
+
+    height: 450px;
+
+    border-radius:
+        50% 50% 15% 15%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #68403b,
+            #986158,
+            #ad7167,
+            #75443f
+        );
+
+    box-shadow:
+        10px 8px 25px rgba(80,40,40,.15);
+}
+
+
+/* =====================================================
+   BRANCH SYSTEM
+===================================================== */
+
+/* Every major branch starts from the trunk */
+
+.branch {
+
+    position: absolute;
+
+    height: 24px;
+
+    border-radius: 50px;
+
+    transform-origin: left center;
+
+    background:
+        linear-gradient(
+            90deg,
+            #70413c,
+            #996057,
+            #70403c
+        );
+
+    box-shadow:
+        0 3px 6px rgba(70,35,35,.12);
+
+    z-index: 3;
+}
+
+
+/* LEFT MAIN */
+
+.branch-left-main {
+
+    width: 350px;
+
+    left: 49%;
+
+    top: 330px;
+
+    transform: rotate(-28deg);
+}
+
+
+/* RIGHT MAIN */
+
+.branch-right-main {
+
+    width: 350px;
+
+    left: 50%;
+
+    top: 330px;
+
+    transform: rotate(28deg);
+}
+
+
+/* UPPER LEFT */
+
+.branch-left-upper {
+
+    width: 290px;
+
+    left: 49%;
+
+    top: 245px;
+
+    transform: rotate(-46deg);
+}
+
+
+/* UPPER RIGHT */
+
+.branch-right-upper {
+
+    width: 290px;
+
+    left: 50%;
+
+    top: 245px;
+
+    transform: rotate(46deg);
+}
+
+
+/* =====================================================
+   SECOND LEVEL BRANCHES
+===================================================== */
+
+.branch-left-a {
+
+    width: 190px;
+
+    left: 24%;
+
+    top: 185px;
+
+    transform: rotate(-38deg);
+}
+
+.branch-left-b {
+
+    width: 180px;
+
+    left: 25%;
+
+    top: 325px;
+
+    transform: rotate(-52deg);
+}
+
+.branch-right-a {
+
+    width: 190px;
+
+    left: 51%;
+
+    top: 185px;
+
+    transform: rotate(38deg);
+}
+
+.branch-right-b {
+
+    width: 180px;
+
+    left: 51%;
+
+    top: 325px;
+
+    transform: rotate(52deg);
+}
+
+
+/* =====================================================
+   SMALL TWIGS
+===================================================== */
+
+.twig {
+
+    position: absolute;
+
+    height: 9px;
+
+    background: #82504a;
+
+    border-radius: 20px;
+
+    transform-origin: left center;
+
+    z-index: 4;
+}
+
+.twig1 {
+
+    width: 125px;
+
+    left: 15%;
+
+    top: 135px;
+
+    transform: rotate(-55deg);
+}
+
+.twig2 {
+
+    width: 125px;
+
+    left: 20%;
+
+    top: 390px;
+
+    transform: rotate(-62deg);
+}
+
+.twig3 {
+
+    width: 125px;
+
+    left: 58%;
+
+    top: 135px;
+
+    transform: rotate(55deg);
+}
+
+.twig4 {
+
+    width: 125px;
+
+    left: 62%;
+
+    top: 390px;
+
+    transform: rotate(62deg);
+}
+
+
+/* =====================================================
+   PHOTO HANGERS
+===================================================== */
+
+.photo-hanger {
+
+    position: absolute;
+
+    width: 125px;
+
+    z-index: 20;
+
+    cursor: pointer;
+
+    transition: .35s;
+}
+
+
+/* STRING */
+
+.string {
+
+    width: 2px;
+
+    height: 55px;
+
+    margin: auto;
+
+    background:
+        rgba(100,60,60,.55);
+
+    position: relative;
+}
+
+
+/* HOOK */
+
+.string::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #d18aa3;
+
+    left: 50%;
+
+    top: -5px;
+
+    transform: translateX(-50%);
+}
+
+
+/* FRAME */
+
+.photo-frame {
+
+    width: 120px;
+
+    height: 145px;
+
+    padding: 7px;
+
+    background: white;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 12px 28px rgba(100,50,75,.22);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+
+/* IMAGE */
+
+.photo-frame img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 5px;
+}
+
+
+/* =====================================================
+   PHOTO POSITIONS
+===================================================== */
+
+/* Photo 1 — left upper branch */
+
+.photo1 {
+
+    left: 3%;
+
+    top: 185px;
+
+    transform: rotate(-7deg);
+}
+
+
+/* Photo 2 — left lower branch */
+
+.photo2 {
+
+    left: 19%;
+
+    top: 405px;
+
+    transform: rotate(6deg);
+}
+
+
+/* Photo 3 — upper left branch */
+
+.photo3 {
+
+    left: 30%;
+
+    top: 120px;
+
+    transform: rotate(-4deg);
+}
+
+
+/* Photo 4 — right upper branch */
+
+.photo4 {
+
+    right: 3%;
+
+    top: 185px;
+
+    transform: rotate(7deg);
+}
+
+
+/* Photo 5 — right lower branch */
+
+.photo5 {
+
+    right: 19%;
+
+    top: 405px;
+
+    transform: rotate(-6deg);
+}
+
+
+/* Photo 6 — upper right branch */
+
+.photo6 {
+
+    right: 30%;
+
+    top: 120px;
+
+    transform: rotate(4deg);
+}
+
+
+/* Photo 7 — center */
+
+.photo7 {
+
+    left: 50%;
+
+    top: 300px;
+
+    transform:
+        translateX(-50%)
+        rotate(-2deg);
+}
+
+
+/* =====================================================
+   CLICK EFFECT
+===================================================== */
+
+.photo-hanger:hover .photo-frame {
+
+    transform:
+        scale(1.04);
+
+    box-shadow:
+        0 18px 35px rgba(150,60,100,.28);
+}
+
+
+/* =====================================================
+   FULLSCREEN PHOTO POPUP
+===================================================== */
+
+.photo-viewer {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(70,30,50,.72);
+
+    backdrop-filter:
+        blur(12px);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1000;
+
+    padding: 25px;
+}
+
+
+.photo-viewer.active {
+
+    display: flex;
+
+    animation: viewerFade .3s ease;
+}
+
+
+@keyframes viewerFade {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.viewer-box {
+
+    position: relative;
+
+    max-width: 90vw;
+    max-height: 88vh;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255,255,255,.92);
+
+    box-shadow:
+        0 30px 90px rgba(0,0,0,.35);
+
+    animation:
+        photoZoom .35s cubic-bezier(.2,.8,.2,1);
+}
+
+
+.viewer-box img {
+
+    display: block;
+
+    max-width: 82vw;
+    max-height: 82vh;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+
+@keyframes photoZoom {
+
+    from {
+
+        transform:
+            scale(.55)
+            translateY(30px);
+
+        opacity: 0;
+    }
+
+    to {
+
+        transform:
+            scale(1)
+            translateY(0);
+
+        opacity: 1;
+    }
+}
+
+
+/* CLOSE */
+
+.close-viewer {
+
+    position: absolute;
+
+    top: -18px;
+
+    right: -18px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #c85a87;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.18);
+
+    z-index: 10;
+}
+
+
+/* =====================================================
+   BLOSSOMS
+===================================================== */
+
+.blossom {
+
+    position: absolute;
+
+    z-index: 12;
+
+    font-size: 28px;
+
+    animation:
+        sway 4s ease-in-out infinite;
+}
+
+@keyframes sway {
+
+    0%,100% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform:
+            rotate(6deg)
+            scale(1.05);
+    }
+}
+
+.b1 { left: 5%; top: 100px; }
+.b2 { left: 15%; top: 155px; }
+.b3 { left: 26%; top: 65px; }
+.b4 { left: 38%; top: 155px; }
+
+.b5 { right: 5%; top: 100px; }
+.b6 { right: 15%; top: 155px; }
+.b7 { right: 26%; top: 65px; }
+.b8 { right: 38%; top: 155px; }
+
+.b9 { left: 10%; top: 320px; }
+.b10 { right: 10%; top: 320px; }
+
+.b11 { left: 23%; top: 460px; }
+.b12 { right: 23%; top: 460px; }
+
+
+/* =====================================================
+   WISH
+===================================================== */
+
+.wish-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffdce9,
+            #fff4f8
+        );
+}
+
+.wish-card {
+
+    width: min(720px,92vw);
+
+    padding: 50px 38px;
+
+    text-align: center;
+
+    background:
+        rgba(255,255,255,.65);
+
+    backdrop-filter:
+        blur(18px);
+
+    border-radius: 30px;
+
+    border:
+        1px solid rgba(255,255,255,.8);
+
+    box-shadow:
+        0 25px 70px rgba(170,70,110,.15);
+}
+
+.wish-card h2 {
+
+    font-family:
+        'DM Serif Display', serif;
+
+    font-size: 35px;
+
+    font-weight: 400;
+
+    color: #cf5688;
+
+    margin-bottom: 28px;
+}
+
+.wish-card p {
+
+    font-size: 15px;
+
+    line-height: 2;
+
+    color: #70465a;
+
+    margin-bottom: 20px;
+}
+
+.signature {
+
+    margin-top: 30px;
+
+    font-family:
+        'DM Serif Display', serif;
+
+    font-size: 22px;
+
+    color: #cf5b8b;
+}
+
+
+/* =====================================================
+   MUSIC
+===================================================== */
+
+.music-button {
+
+    position: fixed;
+
+    right: 22px;
+    bottom: 22px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.88);
+
+    box-shadow:
+        0 10px 30px rgba(160,60,100,.2);
+
+    cursor: pointer;
+
+    font-size: 22px;
+
+    z-index: 100;
+
+    display: none;
+}
+
+
+/* =====================================================
+   PETALS
+===================================================== */
+
+.petal {
+
+    position: fixed;
+
+    top: -30px;
+
+    pointer-events: none;
+
+    z-index: 900;
+
+    animation:
+        falling linear forwards;
+}
+
+@keyframes falling {
+
+    0% {
+
+        transform:
+            translateY(-30px)
+            rotate(0);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: .8;
+    }
+
+    100% {
+
+        transform:
+            translateY(110vh)
+            translateX(100px)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:700px) {
+
+    .tree {
+
+        transform:
+            scale(.62);
+
+        transform-origin:
+            bottom center;
+
+        margin-bottom:
+            -130px;
+    }
+
+    .photo-frame {
+
+        width: 110px;
+        height: 135px;
+    }
+
+    .photo-hanger {
+
+        width: 110px;
+    }
+
+    .wish-card {
+
+        padding:
+            38px 22px;
+    }
+
+    .wish-card p {
+
+        font-size: 14px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     FIRST PAGE
+===================================================== -->
+
+<section
+    class="page-one"
+    id="pageOne">
+
+
+    <!-- FLOATING HEARTS -->
+
+    <div class="floating-heart"
+         style="left:7%;animation-duration:10s;font-size:22px;">
+         ♡
+    </div>
+
+    <div class="floating-heart"
+         style="left:18%;animation-duration:13s;font-size:18px;">
+         ♡
+    </div>
+
+    <div class="floating-heart"
+         style="left:31%;animation-duration:9s;font-size:25px;">
+         ♥
+    </div>
+
+    <div class="floating-heart"
+         style="left:47%;animation-duration:14s;font-size:17px;">
+         ♡
+    </div>
+
+    <div class="floating-heart"
+         style="left:63%;animation-duration:11s;font-size:23px;">
+         ♥
+    </div>
+
+    <div class="floating-heart"
+         style="left:78%;animation-duration:13s;font-size:19px;">
+         ♡
+    </div>
+
+
+    <h1>
+        Happy Birthday Cherry 🌸
+    </h1>
+
+
+    <p class="small-text">
+        A little surprise made especially for you
+    </p>
+
+
+    <!-- HEART BUTTON -->
+
+    <button
+        class="heart-button"
+        onclick="openBirthday()">
+
+        <div class="heart-shape"></div>
+
+        <div class="heart-content">
+            💗
+        </div>
+
+        <span class="heart-label">
+            Tap the heart to open your gift
+        </span>
+
+    </button>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SECOND PAGE
+===================================================== -->
+
+<section
+    class="page-two"
+    id="pageTwo">
+
+
+    <div class="page-title">
+
+        <h2>
+            For You, Cherry 🌸
+        </h2>
+
+        <p>
+            A little world filled with beautiful memories
+        </p>
+
+    </div>
+
+
+    <!-- TREE -->
+
+    <div class="tree-area">
+
+        <div class="tree">
+
+
+            <div class="ground"></div>
+
+
+            <!-- TRUNK -->
+
+            <div class="trunk"></div>
+
+
+            <!-- =================================================
+                 MAIN BRANCHES
+            ================================================= -->
+
+            <div class="branch branch-left-main"></div>
+
+            <div class="branch branch-right-main"></div>
+
+            <div class="branch branch-left-upper"></div>
+
+            <div class="branch branch-right-upper"></div>
+
+
+            <!-- =================================================
+                 SECONDARY BRANCHES
+            ================================================= -->
+
+            <div class="branch branch-left-a"></div>
+
+            <div class="branch branch-left-b"></div>
+
+            <div class="branch branch-right-a"></div>
+
+            <div class="branch branch-right-b"></div>
+
+
+            <!-- =================================================
+                 TWIGS
+            ================================================= -->
+
+            <div class="twig twig1"></div>
+
+            <div class="twig twig2"></div>
+
+            <div class="twig twig3"></div>
+
+            <div class="twig twig4"></div>
+
+
+            <!-- =================================================
+                 PHOTO 1
+            ================================================= -->
+
+            <div
+                class="photo-hanger photo1"
+                onclick="openPhoto('photo1.jpg')">
+
+                <div class="string"></div>
+
+                <div class="photo-frame">
+
+                    <img
+                        src="photo1.jpg"
+                        alt="Cherry photo">
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 2 -->
+
+            <div
+                class="photo-hanger photo2"
+                onclick="openPhoto('photo2.jpg')">
+
+                <div class="string"></div>
+
+                <div class="photo-frame">
+
+                    <img
+                        src="photo2.jpg"
+                        alt="Cherry photo">
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 3 -->
+
+            <div
+                class="photo-hanger photo3"
+                onclick="openPhoto('photo3.jpg')">
+
+                <div class="string"></div>
+
+                <div class="photo-frame">
+
+                    <img
+                        src="photo3.jpg"
+                        alt="Cherry photo">
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 4 -->
+
+            <div
+                class="photo-hanger photo4"
+                onclick="openPhoto('photo4.jpg')">
+
+                <div class="string"></div>
+
+                <div class="photo-frame">
+
+                    <img
+                        src="photo4.jpg"
+                        alt="Cherry photo">
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 5 -->
+
+            <div
+                class="photo-hanger photo5"
+                onclick="openPhoto('photo5.jpg')">
+
+                <div class="string"></div>
+
+                <div class="photo-frame">
+
+                    <img
+                        src="photo5.jpg"
+                        alt="Cherry photo">
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 6 -->
+
+            <div
+                class="photo-hanger photo6"
+                onclick="openPhoto('photo6.jpg')">
+
+                <div class="string"></div>
+
+                <div class="photo-frame">
+
+                    <img
+                        src="photo6.jpg"
+                        alt="Cherry photo">
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 7 -->
+
+            <div
+                class="photo-hanger photo7"
+                onclick="openPhoto('photo7.jpg')">
+
+                <div class="string"></div>
+
+                <div class="photo-frame">
+
+                    <img
+                        src="photo7.jpg"
+                        alt="Cherry photo">
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 CHERRY BLOSSOMS
+            ================================================= -->
+
+            <div class="blossom b1">🌸</div>
+            <div class="blossom b2">🌸</div>
+            <div class="blossom b3">🌸</div>
+            <div class="blossom b4">🌸</div>
+
+            <div class="blossom b5">🌸</div>
+            <div class="blossom b6">🌸</div>
+            <div class="blossom b7">🌸</div>
+            <div class="blossom b8">🌸</div>
+
+            <div class="blossom b9">🌸</div>
+            <div class="blossom b10">🌸</div>
+
+            <div class="blossom b11">🌸</div>
+            <div class="blossom b12">🌸</div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         BIRTHDAY WISH
+    ===================================================== -->
+
+    <section class="wish-section">
+
+        <div class="wish-card">
+
+            <h2>
+                Birthday Wish 💭🌸
+            </h2>
+
+
+            <p>
+                Happy Birthday, pretty girl! 🎂💭
+            </p>
+
+
+            <p>
+                Hope this year brings you more happiness,
+                more good memories, and everything you’ve
+                been wishing for. Keep smiling, keep being you,
+                and enjoy every moment of your life.
+            </p>
+
+
+            <p>
+                Stay happy, stay pretty, and don’t forget
+                to enjoy your day. 🫶🏻
+            </p>
+
+
+            <p>
+                Happy Birthday once again! 💕
+            </p>
+
+
+            <div class="signature">
+                🌸 With love, always
+            </div>
+
+        </div>
+
+    </section>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PHOTO FULLSCREEN VIEWER
+===================================================== -->
+
+<div
+    class="photo-viewer"
+    id="photoViewer"
+    onclick="closePhoto(event)">
+
+
+    <div class="viewer-box">
+
+
+        <button
+            class="close-viewer"
+            onclick="closePhoto()">
+
+            ×
+
+        </button>
+
+
+        <img
+            id="viewerImage"
+            src=""
+            alt="Large photo">
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     MUSIC
+===================================================== -->
+
+<audio
+    id="birthdayMusic"
+    loop>
+
+    <source
+        src="song.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+<button
+    class="music-button"
+    id="musicButton"
+    onclick="toggleMusic()">
+
+    🎵
+
+</button>
+
+
+
+<script>
+
+
+/* =====================================================
+   OPEN BIRTHDAY
+===================================================== */
+
+function openBirthday() {
+
+    document.getElementById("pageOne")
+        .style.display = "none";
+
+
+    document.getElementById("pageTwo")
+        .style.display = "block";
+
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+
+    const music =
+        document.getElementById("birthdayMusic");
+
+
+    music.volume = 0.45;
+
+
+    music.play().catch(() => {});
+
+
+    document.getElementById("musicButton")
+        .style.display = "block";
+
+
+    startPetals();
+
+}
+
+
+
+/* =====================================================
+   PHOTO POPUP
+===================================================== */
+
+function openPhoto(image) {
+
+    const viewer =
+        document.getElementById("photoViewer");
+
+    const viewerImage =
+        document.getElementById("viewerImage");
+
+
+    viewerImage.src = image;
+
+
+    viewer.classList.add("active");
+
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+
+/* =====================================================
+   CLOSE PHOTO
+===================================================== */
+
+function closePhoto(event) {
+
+    if (
+        event &&
+        event.target !==
+        document.getElementById("photoViewer")
+    ) {
+
+        return;
+
+    }
+
+
+    document.getElementById("photoViewer")
+        .classList.remove("active");
+
+
+    document.body.style.overflow = "auto";
+
+}
+
+
+
+/* =====================================================
+   MUSIC
+===================================================== */
+
+function toggleMusic() {
+
+    const music =
+        document.getElementById("birthdayMusic");
+
+    const button =
+        document.getElementById("musicButton");
+
+
+    if (music.paused) {
+
+        music.play();
+
+        button.innerHTML = "🎵";
+
+    }
+
+    else {
+
+        music.pause();
+
+        button.innerHTML = "🔇";
+
+    }
+
+}
+
+
+
+/* =====================================================
+   FALLING PETALS
+===================================================== */
+
+function startPetals() {
+
+    setInterval(() => {
+
+        const petal =
+            document.createElement("div");
+
+
+        petal.className = "petal";
+
+
+        const flowers = [
+            "🌸",
+            "🌸",
+            "🌸",
+            "💗"
+        ];
+
+
+        petal.innerHTML =
+            flowers[
+                Math.floor(
+                    Math.random() *
+                    flowers.length
+                )
+            ];
+
+
+        petal.style.left =
+            Math.random() * 100 + "vw";
+
+
+        petal.style.fontSize =
+            (12 + Math.random() * 15) + "px";
+
+
+        petal.style.animationDuration =
+            (5 + Math.random() * 6) + "s";
+
+
+        document.body.appendChild(petal);
+
+
+        setTimeout(() => {
+
+            petal.remove();
+
+        }, 12000);
+
+
+    }, 500);
+
+}
+
+
+/* =====================================================
+   ESC KEY CLOSE PHOTO
+===================================================== */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+
+            document.getElementById(
+                "photoViewer"
+            ).classList.remove("active");
+
+            document.body.style.overflow = "auto";
+
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>
